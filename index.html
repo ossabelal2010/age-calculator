@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Age Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="gl"></canvas>
+
+    <main class="container">
+
+        <section class="calculator-card">
+
+            <div class="icon">
+                🎂
+            </div>
+
+            <h1>Age Calculator</h1>
+
+            <p class="subtitle">
+                Discover your age in seconds
+            </p>
+
+            <div class="input-group">
+                <label for="birthyear">
+                    Birth Year
+                </label>
+
+                <input
+                    id="birthyear"
+                    type="number"
+                    placeholder="e.g. 2010"
+                    min="1900"
+                    max="2100"
+                >
+            </div>
+
+            <button
+                type="button"
+                id="calculate-btn"
+            >
+                Calculate Age
+                <span>→</span>
+            </button>
+
+            <div
+                id="result"
+                class="result"
+                aria-live="polite"
+            ></div>
+
+        </section>
+
+        <p class="footer">
+            Built with HTML, CSS & JavaScript
+        </p>
+
+    </main>
+
+    <script src="gradient.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

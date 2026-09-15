@@ -30,7 +30,7 @@ button.addEventListener("click", function () {
     ) {
 
         result.textContent =
-            `Please enter a year between 1900 and {currentYear}.`;
+            `Please enter a year between 1900 and ${currentYear}.`;
 
         result.classList.add("show");
 
@@ -60,3 +60,4 @@ birthYearInput.addEventListener("keydown", function (event) {
     }
 
 });
+
